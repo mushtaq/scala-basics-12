@@ -12,7 +12,8 @@ val json: JsValue = Json.obj(
     "f" -> 20,
     "g" -> false,
     "h" -> "hello",
-    "i" -> List("urn:pune", "this", "is", "")
+    "i" -> List("urn:pune", "this", "is", ""),
+    "i2" -> List(9, 7)
   ),
   "j" -> List(
     Json.obj("k" -> "urn:tw", "l" -> "munich"),
