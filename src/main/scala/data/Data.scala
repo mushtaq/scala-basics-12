@@ -31,8 +31,8 @@ object Data {
     Book("odersky", "scala prog", 100),
     Book("odersky", "apple", 100),
     Book("odersky", "complexity", 400),
-    Book("misky", "ocaml prog", 1000),
-    Book("misky", "sml", 88),
+    Book("minsky", "ocaml prog", 1000),
+    Book("minsky", "sml", 88),
     Book("hickey", "clojure prog", 500)
   )
 

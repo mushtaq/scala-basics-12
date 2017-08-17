@@ -9,7 +9,7 @@ def perform(xs: List[Int], f: (Int) ⇒ Int): List[Int] = {
   val it = xs.iterator
   val buffer = mutable.Buffer.empty[Int]
   while (it.hasNext) {
-    buffer += f(it.next())
+    buffer += f.apply(it.next())
   }
   buffer.toList
 }
