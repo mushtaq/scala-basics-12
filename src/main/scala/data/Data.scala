@@ -1,6 +1,6 @@
 package data
 
-import play.api.libs.json.{Json, Reads, Writes}
+import play.api.libs.json.{Format, Json, Reads, Writes}
 import s.Ord
 
 
@@ -24,6 +24,7 @@ case class Book(
 
 object Book {
   implicit val bookOrd: Ord[Book] = (a: Book, b: Book) => a.basePrice < b.basePrice
+  implicit val format: Format[Book] = Json.format[Book]
 }
 
 object Data {
